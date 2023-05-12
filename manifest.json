@@ -1,0 +1,25 @@
+{
+    "name": "Content-Blocker",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Adblocker",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "defaultFilters.js",
+            "adultFilters.js",
+            "blocksites.js"
+        ]
+    },
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "shield.png"
+    },
+    "icons": {
+        "512": "shield.png"
+    }
+}
